@@ -1,10 +1,10 @@
 package controller
 
 import (
-	"fmt"
 	"net/http"
 
 	"../model"
+	"../utils"
 )
 
 type home struct{}
@@ -16,5 +16,5 @@ func (h home) registerRoutes() {
 
 func (h home) handleHome(w http.ResponseWriter, req *http.Request) {
 	user := model.GetUser()
-	fmt.Println("user :)", user.FirstName)
+	utils.JSON(w, user)
 }

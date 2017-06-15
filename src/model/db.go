@@ -11,6 +11,6 @@ func SetDatabase(database *gorm.DB) {
 
 // User struct for DB connection test
 type User struct {
-	FirstName string
-	LastName  string
+	FirstName string `json:"first_name"`
+	LastName  string `json:"last_name"`
 }

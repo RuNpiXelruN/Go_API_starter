@@ -9,7 +9,4 @@ var (
 func Startup() {
 	homeController.registerRoutes()
 	aboutController.registerRoutes()
-
-	// http.Handle("/img/", http.FileServer(http.Dir("public")))
-	// http.Handle("/css/", http.FileServer(http.Dir("public")))
 }
