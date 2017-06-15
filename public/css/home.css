@@ -1,0 +1,14 @@
+.home-wrapper {
+  height: 100vh;
+  background: rgb(212, 254, 255);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-text {
+  color: rgb(85, 66, 45);
+  font-family: sans-serif;
+}
